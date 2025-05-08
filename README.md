@@ -35,7 +35,7 @@ color-extractor
 
 2. Run the application:
    ```
-   python src/main.py <image-file-path>
+   python src/main.py
    ```
 
 3. The extracted colors will be saved in a file named `colors.txt` in the project directory.
