@@ -1,49 +1,62 @@
 # Color Extractor
 
-This project is designed to extract dominant colors from an image, convert them to hexadecimal format, and save the results in a text file.
+Color Extractor is a Python-based application that can extract and sort colors from an image file. The extracted colors are saved in a `colors.txt` file.
 
-## Project Structure
+## Features
+- Extract colors from an image file.
+- Sort colors by brightness (lightest to darkest).
+- Save extracted colors in HEX format to a text file.
+- Simple and user-friendly GUI built with Tkinter.
 
-```
-color-extractor
-├── src
-│   ├── main.py
-│   ├── utils
-│   │   └── color_utils.py
-│   └── services
-│       └── image_processor.py
-├── requirements.txt
-└── README.md
-```
+## Requirements
+- Python 3.7 or higher
+- Required Python libraries (see `requirements.txt`)
 
 ## Installation
 
 1. Clone the repository:
-   ```
+   ```bash
    git clone https://github.com/nawidix/ColorExtractor.git
-   cd color-extractor
+   cd ColorExtractor
    ```
 
 2. Install the required dependencies:
-   ```
+   ```bash
    pip install -r requirements.txt
    ```
 
 ## Usage
 
-1. Place the image you want to analyze in the project directory.
-
-2. Run the application:
-   ```
+1. Run the application:
+   ```bash
    python src/main.py
    ```
 
-3. The extracted colors will be saved in a file named `colors.txt` in the project directory.
+2. Use the GUI to:
+   - Select an image file.
+   - Specify the number of colors to extract.
+   - View the progress of the extraction process.
+   - Open the `colors.txt` file to see the extracted colors.
 
-## Dependencies
-
-- Pillow: A Python Imaging Library that adds image processing capabilities to your Python interpreter.
+## File Structure
+```
+ColorExtractor/
+├── src/
+│   ├── main.py
+│   ├── utils/
+│   │   └── color_utils.py
+│   ├── services/
+│   │   └── image_processor.py
+├── requirements.txt
+└── README.md
+```
 
 ## Contributing
+Feel free to fork the repository and submit pull requests for improvements or bug fixes.
 
-Feel free to submit issues or pull requests for improvements or bug fixes.
+## License
+Free License.
+
+---
+
+Made by: @NAWIDX
